@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import TextField from "Components/textField";
 import Button from "Components/button";
 import { useMutation } from "react-query";
-import { register as registerEndpoint } from "Services/authServices";
+import { GoogleLogin, register as registerEndpoint } from "Services/authServices";
 import {
   Background,
   Container,
@@ -16,6 +16,7 @@ import {
   Action,
   CheckboxContainer,
 } from "./_registerStyle";
+import { toast } from "react-toastify";
 
 const forms = [
   {
@@ -51,6 +52,19 @@ function Register() {
       }
     } catch (error) {
       console.log(error);
+    }
+  };
+  const handleGoogleLogin = async () => {
+    try {
+      const requiresRegistration = await GoogleLogin();
+      
+      if (requiresRegistration) {
+        navigate(paths.REGISTER_GOOGLE_PAGE); // Navigasi ke halaman registrasi
+      } else {
+        navigate(paths.LANDING_PAGE); // Navigasi ke halaman utama
+      }
+    } catch (error) {
+      toast("Login dengan Google gagal.", { type: "error" });
     }
   };
 
@@ -97,7 +111,9 @@ function Register() {
             Registrasi
           </Button>
         </form>
-
+        <Button size="m" fullWidth mt={12} onClick={handleGoogleLogin}>
+            Google
+        </Button>
         <ActionContainer mt={24}>
           <Label>Sudah memiliki akun?</Label>
           <Action onClick={() => navigate(paths.LOGIN_PAGE)}>Login</Action>

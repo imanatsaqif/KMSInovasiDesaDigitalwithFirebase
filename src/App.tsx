@@ -8,6 +8,7 @@ import { paths } from "Consts/path";
 import Innovator from "./pages/innovator";
 import Login from "./pages/login";
 import Register from "./pages/register";
+import Register_G from "./pages/register_Google";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { QueryClient, QueryClientProvider } from "react-query";
 import DetailInnovation from "./pages/innovation/detail";
@@ -86,6 +87,11 @@ const routes = [
     element: <DetailInnovation />,
     exact: true,
   },
+  {
+    path: paths.REGISTER_GOOGLE_PAGE,
+    element: <Register_G />,
+    exact: true,
+  }
 ];
 
 function App() {

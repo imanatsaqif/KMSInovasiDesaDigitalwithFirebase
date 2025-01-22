@@ -2,6 +2,7 @@ export const paths = {
   LANDING_PAGE: "/",
   LOGIN_PAGE: "/login",
   REGISTER_PAGE: "/register",
+  REGISTER_GOOGLE_PAGE: "/register_Google",
   VILLAGE_PAGE: "/village",
   VILLAGE_PROFILE_PAGE: "/village/profile",
   DETAIL_VILLAGE_PAGE: "/village/detail/:id",

@@ -126,7 +126,7 @@ function DetailInnovation() {
           <Text mb={16}>Desa yang Menerapkan</Text>
           {villages ? (
             villages.map((village) => (
-              <ActionContainer key={village.id} onClick={() => navigate(generatePath(paths.DETAIL_VILLAGE_PAGE, { id: village.id }))}>
+              <ActionContainer key={village.id} onClick={() => navigate(generatePath(paths.DETAIL_VILLAGE_PAGE, { id: village.user_id }))}>
                 <Logo src={village.logo || Dot} alt={village.nameVillage} />
                 <Text>{village.nameVillage}</Text>
               </ActionContainer>

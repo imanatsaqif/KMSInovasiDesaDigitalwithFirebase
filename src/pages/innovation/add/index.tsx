@@ -119,17 +119,14 @@ function AddInnovation() {
     try {
       const backgroundFile = data.background[0];
 
-      // Buat id unik untuk inovasi baru dengan membuat dokumen kosong pada koleksi "innovations"
-      const innovationDocRef = await addDoc(collection(db, "innovations"), {}); // Menambahkan dokumen kosong dan mendapatkan referensi dokumen baru
+      const innovationDocRef = await addDoc(collection(db, "innovations"), {user_id: auth.id}); 
+      const idUnik = innovationDocRef.id;
 
-      // Upload gambar background pada id unik tersebut di storage
       const backgroundUrl = await uploadImage(backgroundFile, `innovations/${innovationDocRef.id}/background`);
 
-      // Cari dokumen dengan kode unik pada koleksi "innovators"
       const innovatorDocRef = doc(collection(db, "innovators"), auth.id);
       const innovatorDoc = await getDoc(innovatorDocRef);
 
-      // Ambil link dari data logo user tersebut
       let logoUrl = "";
       if (innovatorDoc.exists()) {
         const innovatorData = innovatorDoc.data();
@@ -140,15 +137,13 @@ function AddInnovation() {
 
       const payload = {
         ...data,
-        logo: logoUrl, // Masukkan URL logo ke dalam payload
+        idUnik,
+        logo: logoUrl,
         background: backgroundUrl,
-        innovatorId: auth?.id,
         user_id: auth?.id,
       };
 
-      // Simpan link URL gambar tersebut dan data lainnya
-      await setDoc(innovationDocRef, payload); // Menyimpan data inovasi ke dokumen yang baru dibuat
-
+      await setDoc(innovationDocRef, payload);
       toast("Inovasi berhasil ditambahkan", { type: "success" });
       navigate(
         generatePath(paths.INNOVATION_CATEGORY_PAGE, {

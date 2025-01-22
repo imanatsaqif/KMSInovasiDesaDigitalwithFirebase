@@ -78,6 +78,8 @@ function Detail() {
             ))}
           </GridContainer>
           <Description>{description}</Description>
+        </div>
+        <div>
           <Text>Inovasi yang Dihasilkan</Text>
           <GridContainer>
             {innovationsData?.map((item: any, idx: number) => (

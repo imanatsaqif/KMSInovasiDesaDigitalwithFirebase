@@ -95,25 +95,25 @@ function DetailVillage() {
         <ChipContainer>
           <Label>{benefit}</Label>
         </ChipContainer>
+        <div>
+          <Text mb={16}>Inovasi yang Diterapkan</Text>
+          {innovations ? (
+            innovations.map((innovation) => (
+              <CardInnovation
+                key={innovation.id}
+                {...innovation}
+                onClick={() =>
+                  navigate(
+                    generatePath(paths.DETAIL_INNOVATION_PAGE, { id: innovation.id })
+                  )
+                }
+              />
+            ))
+          ) : (
+            <Description>Belum ada inovasi yang diterapkan</Description>
+          )}
+        </div>
       </ContentContainer>
-      <div>
-        <Text mb={16}>Inovasi yang Diterapkan</Text>
-        {innovations ? (
-          innovations.map((innovation) => (
-            <CardInnovation
-              key={innovation.id}
-              {...innovation}
-              onClick={() =>
-                navigate(
-                  generatePath(paths.DETAIL_INNOVATION_PAGE, { id: innovation.id })
-                )
-              }
-            />
-          ))
-        ) : (
-          <Description>Belum ada inovasi yang diterapkan</Description>
-        )}
-      </div>
       <Button size="m" fullWidth mt={12} type="submit" onClick={onClickHere}>
         Kontak Desa
       </Button>{" "}

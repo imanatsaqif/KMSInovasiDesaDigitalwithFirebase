@@ -211,10 +211,10 @@ function AddVillage() {
         const docRef = doc(collection(db, "village"), auth.id);
 
         // Konversi ID lokasi menjadi nama lokasi
-        const provinceName = await getNamaProvinsi(data.province); // (Baris 168)
-        const districtName = await getNamaKabupaten(data.district); // (Baris 169)
-        const subDistrictName = await getNamaKecamatan(data.subDistrict); // (Baris 170)
-        const villageName = await getNamaKelurahan(data.village); // (Baris 171)
+        const provinceName = await getNamaProvinsi(data.province);
+        const districtName = await getNamaKabupaten(data.district);
+        const subDistrictName = await getNamaKecamatan(data.subDistrict);
+        const villageName = await getNamaKelurahan(data.village);
 
         console.log("Saving profile data...");
 
@@ -224,8 +224,8 @@ function AddVillage() {
           description: data.description,
           benefit: data.benefit,
           whatsApp: data.whatsApp,
-          province: provinceName, // Gunakan nama lokasi (Baris 178)
-          district: districtName, // Gunakan nama lokasi (Baris 179)
+          province: provinceName,
+          district: districtName,
           subDistrict: subDistrictName, // Gunakan nama lokasi (Baris 180)
           village: villageName, // Gunakan nama lokasi (Baris 181)
           user_id: auth.id,
@@ -255,7 +255,7 @@ function AddVillage() {
             const headerRef = ref(storage, `villages/${auth.id}/header`);
             await uploadString(headerRef, selectedHeader, "data_url");
             const downloadURL = await getDownloadURL(headerRef);
-            await updateDoc(docRef, { header: downloadURL }); // Simpan URL header di Firestore (Baris 205)
+            await updateDoc(docRef, { header: downloadURL });
           } catch (error) {
             console.error("Error uploading header:", error);
           }
