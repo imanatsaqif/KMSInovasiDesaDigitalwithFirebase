@@ -73,16 +73,6 @@ Hasil penelitian menunjukkan bahwa integrasi Firebase berhasil meningkatkan efis
 
 ---
 
-## Kontributor (Contributors)
-
-| Nama                | Peran                                |
-|---------------------|----------------------------------------|
-| Hana Tasnim         | UI/UX Design & Aplikasi Konseptual     |
-| Nuryantika          | Modul Front-End                        |
-| Imana Tsaqif Ariyadi| Integrasi Firebase & Pengembangan Lanjut |
-
----
-
 ## Lisensi (License)
 
 Proyek ini menggunakan lisensi akademik non-komersial. Silakan hubungi saya untuk kolaborasi atau penggunaan lebih lanjut.
