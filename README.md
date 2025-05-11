@@ -19,9 +19,9 @@ This project is a continuation of a *Knowledge Management System* (KMS) designed
 
 ## Iterasi Sebelumnya (Previous Iterations)
 
-- 🎨 [Hana Tasnim (2023)]([https://github.com/](https://www.linkedin.com/in/hanatasnim/)) – UI/UX design and application concept  
-- 💻 [Nuryantika (2023)](https://github.com/fitrianurynt/desa-digital) – Front-end module development  
-- 🔧 [Imana Tsaqif Ariyadi (2024)](https://github.com/imanatsaqif/KMSInovasiDesaDigitalwithFirebase) – Firebase integration and feature enhancement
+-  [Hana Tasnim (2023)]([https://github.com/](https://www.linkedin.com/in/hanatasnim/)) – UI/UX design and application concept  
+-  [Nuryantika (2023)](https://github.com/fitrianurynt/desa-digital) – Front-end module development  
+-  [Imana Tsaqif Ariyadi (2024)](https://github.com/imanatsaqif/KMSInovasiDesaDigitalwithFirebase) – Firebase integration and feature enhancement
 
 ---
 
