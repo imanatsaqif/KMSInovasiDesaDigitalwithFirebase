@@ -7,7 +7,7 @@ Front-end Firebase integration for a Knowledge Management System to support digi
 
 ---
 
-## 📌 Deskripsi Proyek (Project Description)
+## Deskripsi Proyek (Project Description)
 
 **Bahasa Indonesia**  
 Proyek ini merupakan hasil pengembangan lanjutan dari sistem *Knowledge Management System* (KMS) untuk mendukung pengelolaan data inovasi desa digital. Dalam skripsi ini, saya melakukan integrasi Firebase ke modul front-end yang telah dikembangkan sebelumnya dan menambahkan beberapa fitur serta penyesuaian kecil.
@@ -17,7 +17,7 @@ This project is a continuation of a *Knowledge Management System* (KMS) designed
 
 ---
 
-## 🔗 Iterasi Sebelumnya (Previous Iterations)
+## Iterasi Sebelumnya (Previous Iterations)
 
 - 🎨 [Hana Tasnim (2023)]([https://github.com/](https://www.linkedin.com/in/hanatasnim/)) – UI/UX design and application concept  
 - 💻 [Nuryantika (2023)](https://github.com/fitrianurynt/desa-digital) – Front-end module development  
@@ -25,18 +25,18 @@ This project is a continuation of a *Knowledge Management System* (KMS) designed
 
 ---
 
-## 🚀 Fitur Utama (Key Features)
+## Fitur Utama (Key Features)
 
-- 🔐 **Firebase Authentication** *(optional, if implemented)*
-- 🗃️ **Realtime Firestore Database** untuk menyimpan data desa dan inovasi
-- 🧭 **Integrasi API Alamat Indonesia** untuk pengisian data lokasi yang akurat
-- 📦 **Firebase Hosting** untuk deployment aplikasi
-- 💡 Antarmuka berbasis kartu (*Card-based UI*) yang responsif dan ringan
-- 🛠️ Beberapa penyesuaian fitur dari versi sebelumnya (validasi, UX tweaks, dsb)
+- **Firebase Authentication** *(optional, if implemented)*
+- **Realtime Firestore Database** untuk menyimpan data desa dan inovasi
+- **Integrasi API Alamat Indonesia** untuk pengisian data lokasi yang akurat
+- **Firebase Hosting** untuk deployment aplikasi
+- Antarmuka berbasis kartu (*Card-based UI*) yang responsif dan ringan
+- Beberapa penyesuaian fitur dari versi sebelumnya (validasi, UX tweaks, dsb)
 
 ---
 
-## 🛠️ Teknologi yang Digunakan (Tech Stack)
+##  Teknologi yang Digunakan (Tech Stack)
 
 - **Front-End:** JavaScript, React, Tailwind CSS  
 - **Backend/Cloud:** Firebase (Firestore, Hosting, Storage)  
@@ -44,19 +44,8 @@ This project is a continuation of a *Knowledge Management System* (KMS) designed
 
 ---
 
-## 📂 Struktur Proyek (Project Structure)
 
-```
-src/
-├── components/
-├── pages/
-├── services/
-└── utils/
-```
-
----
-
-## 🧪 Cara Menjalankan (How to Run)
+## Cara Menjalankan (How to Run)
 
 ```bash
 # 1. Clone repositori ini
@@ -73,7 +62,7 @@ Pastikan Anda sudah memiliki konfigurasi Firebase (`.env` atau `firebaseConfig.j
 
 ---
 
-## 📚 Referensi Akademik (Academic Reference)
+## Referensi Akademik (Academic Reference)
 
 Judul Skripsi:  
 **"Integrasi Firebase pada Modul Front-End (Studi Kasus KMS Inovasi Desa Digital)"**
@@ -84,7 +73,7 @@ Hasil penelitian menunjukkan bahwa integrasi Firebase berhasil meningkatkan efis
 
 ---
 
-## 🙌 Kontributor (Contributors)
+## Kontributor (Contributors)
 
 | Nama                | Peran                                |
 |---------------------|----------------------------------------|
@@ -94,13 +83,13 @@ Hasil penelitian menunjukkan bahwa integrasi Firebase berhasil meningkatkan efis
 
 ---
 
-## 📄 Lisensi (License)
+## Lisensi (License)
 
 Proyek ini menggunakan lisensi akademik non-komersial. Silakan hubungi saya untuk kolaborasi atau penggunaan lebih lanjut.
 
 ---
 
-## 📬 Kontak (Contact)
+## Kontak (Contact)
 
 Imana Tsaqif Ariyadi  
 [LinkedIn](https://linkedin.com/in/imanatsaqif) | [GitHub](https://github.com/imanatsaqif)  
