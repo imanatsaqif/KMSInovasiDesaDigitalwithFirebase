@@ -4,6 +4,7 @@ Skripsi Sarjana – Program Studi Ilmu Komputer, IPB University
 Bachelor Thesis – Computer Science Program, IPB University
 
 Front-end Firebase integration for a Knowledge Management System to support digital village innovation in Indonesia.
+Live-Web: https://kms-desadigital.vercel.app/
 
 ---
 
@@ -51,11 +52,14 @@ This project is a continuation of a *Knowledge Management System* (KMS) designed
 # 1. Clone repositori ini
 git clone https://github.com/imanatsaqif/KMSInovasiDesaDigitalwithFirebase
 
-# 2. Install dependencies
+# 2. Masuk ke folder proyek
+cd KMSInovasiDesaDigitalwithFirebase
+
+# 3. Install dependencies
 npm install
 
-# 3. Jalankan lokal
-npm start
+# 4. Jalankan aplikasi secara lokal
+npm run dev
 ```
 
 Pastikan Anda sudah memiliki konfigurasi Firebase (`.env` atau `firebaseConfig.js`) agar sistem berjalan normal.
